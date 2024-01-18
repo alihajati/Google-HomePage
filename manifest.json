@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
     "name": "Google Main Page",
-    "version": "1.0",
-    "description": "Replace Edge Main Home Page With Google",
+    "version": "1.4",
+    "description": "Replace Edge Main Home Page With Google This Extention Is OpenSource You Can Contribute To This Project On Github",
     "permissions": ["activeTab"],
     "chrome_url_overrides": {
       "newtab": "newtab.html"
