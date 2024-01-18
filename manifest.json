@@ -1,24 +1,24 @@
 {
-    "manifest_version": 2,
-    "name": "Google Main Page",
-    "version": "1.4",
-    "description": "Replace Edge Main Home Page With Google This Extention Is OpenSource You Can Contribute To This Project On Github",
-    "permissions": ["activeTab"],
-    "chrome_url_overrides": {
-      "newtab": "newtab.html"
-    },
-    "icons": {
-      "48": "icon.png"
-    },
-    "background": {
-      "scripts": ["background.js"],
-      "persistent": false
-    },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"]
-      }
-    ]
-  }
-  
+  "manifest_version": 3,
+  "name": "Google Main Page",
+  "version": "1.4",
+  "description": {
+    "en": "Replace Edge Main Home Page With Google. This Extension Is OpenSource; You Can Contribute To This Project On GitHub."
+  },
+  "permissions": ["activeTab"],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
