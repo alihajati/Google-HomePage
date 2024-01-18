@@ -4,9 +4,8 @@
     "version": "1.0",
     "description": "Replace Edge Main Home Page With Google",
     "permissions": ["activeTab"],
-    "browser_action": {
-      "default_icon": "icon.png",
-      "default_popup": "popup.html"
+    "chrome_url_overrides": {
+      "newtab": "newtab.html"
     },
     "icons": {
       "48": "icon.png"
